@@ -1,7 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import Sidebar from "../shared/Sidebar";
-import Header from "./components/Header";
+import Header from "../shared/Header";
 import MagazineSection from "./components/MagazineSection";
 import CreateMagazine from "./components/CreateMagazine";
 

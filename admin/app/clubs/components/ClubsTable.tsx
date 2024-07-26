@@ -1,6 +1,10 @@
 import React, { useState, useEffect } from "react";
 import ClubView from "./ClubView"; 
 import EditClubForm from "./EditClubForm"; 
+import edit from "../../../assets/edit.png";
+import delete1 from "../../../assets/delete.png"
+import view from "../../../assets/view.png"
+import Image from "next/image";
 
 interface ClubData {
   name: string;
@@ -134,9 +138,9 @@ const ClubTable: React.FC<ClubTableProps> = ({ searchQuery }) => {
                         className="flex justify-center items-center px-3 py-2.5 bg-white rounded-md"
                         onClick={() => handleViewClick(club)}
                       >
-                        <img
+                        <Image
                           loading="lazy"
-                          src=""
+                          src={view}
                           alt="View Icon"
                           className="aspect-[1.28] fill-zinc-700 w-[18px]"
                         />
@@ -145,9 +149,9 @@ const ClubTable: React.FC<ClubTableProps> = ({ searchQuery }) => {
                         className="flex justify-center items-center px-3.5 py-2.5 bg-white rounded-md"
                         onClick={() => handleEditClick(club)}
                       >
-                        <img
+                        <Image
                           loading="lazy"
-                          src=""
+                          src={edit}
                           alt="Edit Icon"
                           className="w-3.5 aspect-[0.88] fill-indigo-400"
                         />
@@ -156,9 +160,9 @@ const ClubTable: React.FC<ClubTableProps> = ({ searchQuery }) => {
                         className="flex justify-center items-center px-2.5 py-2 bg-white rounded-md"
                         onClick={() => handleDeleteClick(club)}
                       >
-                        <img
+                        <Image
                           loading="lazy"
-                          src=""
+                          src={delete1}
                           alt="Delete Icon"
                           className="w-5 aspect-square"
                         />

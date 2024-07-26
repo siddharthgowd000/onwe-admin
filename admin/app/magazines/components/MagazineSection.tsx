@@ -1,4 +1,7 @@
 import React, { useState, useMemo } from 'react';
+import Image, { StaticImageData } from 'next/image';
+import edit from "../../../assets/edit.png";
+import delete1 from "../../../assets/delete.png"
 
 import EditMagazine from './EditMagazine';
 
@@ -125,7 +128,7 @@ const magazineItems: MagazineItem[] = [
   {
     id: 17,
     image: "https://cdn.builder.io/api/v1/image/assets/TEMP/64578ae9ef82679855e8860ed12c161de04e59bb4e19b30082d2a8d361c712cd?apiKey=fa090b16b04649b4a5024c30e95337f0&&apiKey=fa090b16b04649b4a5024c30e95337f0",
-    title: "AKSHITHA",
+    title: "AKSHITHA RONDLA",
     date: "MAGAZINE 08. SEP 25",
     description: "Praesent quis justo vel nunc aliquam tincidunt. Sed euismod, nunc id aliquam tincidunt, nunc nunc tincidunt nunc, nec tincidunt nunc nunc id nunc."
   },
@@ -379,9 +382,9 @@ interface MagazineItem {
           onClick={handleEditClick}
         >
           <div className="flex gap-3.5">
-            <img
+            <Image
               loading="lazy"
-              src="https://cdn.builder.io/api/v1/image/assets/TEMP/9c1368f9f1ce59851b8f72513e540d5627b76234301a01182a0ada3978372072?apiKey=fa090b16b04649b4a5024c30e95337f0&&apiKey=fa090b16b04649b4a5024c30e95337f0"
+              src = {edit}
               alt=""
               className="flex-1 shrink-0 w-full aspect-[0.88] fill-indigo-400"
             />
@@ -393,9 +396,9 @@ interface MagazineItem {
           className="flex justify-center items-center px-16 py-1.5 mt-2.5 w-full whitespace-nowrap bg-white rounded-md border border-solid border-zinc-100 text-zinc-900 max-md:px-5"
         >
           <div className="flex gap-2.5">
-            <img
+            <Image
               loading="lazy"
-              src="https://cdn.builder.io/api/v1/image/assets/TEMP/d6d0e6d8335a0e899e974c7870046f0c34095bc84a4b0c260ae145f0aa254e79?apiKey=fa090b16b04649b4a5024c30e95337f0&&apiKey=fa090b16b04649b4a5024c30e95337f0"
+              src = {delete1}
               alt=""
               className="shrink-0 w-5 aspect-square"
             />

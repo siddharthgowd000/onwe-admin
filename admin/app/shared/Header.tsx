@@ -1,5 +1,8 @@
 "use client";
 import React, { useState } from "react";
+import search1 from "../../assets/search.png"
+import add from "../../assets/fluent_add-12-filled.png" 
+import Image from "next/image";
 
 const Header: React.FC<{ onSearch: (query: string) => void; onCreate: () => void }> = ({ onSearch, onCreate }) => {
   const [search, setSearch] = useState<string>("");
@@ -15,7 +18,7 @@ const Header: React.FC<{ onSearch: (query: string) => void; onCreate: () => void
       <div className="flex justify-between items-center">
         <h1 className="text-xl font-semibold text-black">Admin Dashboard</h1>
         <div className="flex items-center gap-5">
-          <div className="flex items-center px-5 py-2.5 bg-white rounded-xl text-stone-300">
+          <div className="flex items-center px-5 py-2.5 rounded-xl text-stone-300">
             <input
               type="text"
               placeholder="Search..."
@@ -23,9 +26,9 @@ const Header: React.FC<{ onSearch: (query: string) => void; onCreate: () => void
               onChange={handleSearchChange}
               className="w-full px-2 py-1 rounded-xl text-stone-600 border border-stone-300 outline-none"
             />
-            <img
+            <Image
               loading="lazy"
-              src="" 
+              src={search1}
               alt="Search Icon"
               className="shrink-0 w-4 aspect-square ml-2"
             />
@@ -35,9 +38,9 @@ const Header: React.FC<{ onSearch: (query: string) => void; onCreate: () => void
               className="flex items-center  px-6 py-2.5 font-semibold text-emerald-600 bg-green-200 rounded-xl shadow-sm"
               onClick={onCreate}
             >
-              <img
+              <Image
                 loading="lazy"
-                src="" 
+                src={add} 
                 alt="Add Icon"
                 className="shrink-0 w-4 aspect-square mr-2"
               />

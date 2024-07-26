@@ -1,4 +1,6 @@
 import React, {useState} from 'react';
+import view from "../../../assets/view.png"
+import Image from 'next/image';
 
 interface EventData {
   name: string;
@@ -67,10 +69,10 @@ const EventTable: React.FC<EventTableProps> = ({ searchQuery, onSelectEvent }) =
                   <td className="px-2.5 py-2 text-center">{event.date}</td>
                   <td className="px-2.5 py-2 flex justify-center">
                     <button 
-                      className="flex justify-center items-center px-3 py-2.5 bg-zinc-700 rounded-md"
+                      className="flex justify-center items-center px-3 py-2.5 bg-zinc-200 rounded-md"
                       onClick={() => onSelectEvent(event)}
                     >
-                      <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/fc10bec00d6af9e9561930dd877483dd469d334416f67d6f0ee9f5ce40cfffe4?apiKey=fa090b16b04649b4a5024c30e95337f0&&apiKey=fa090b16b04649b4a5024c30e95337f0" alt="" className="aspect-[1.28] fill-white w-[18px]" />
+                      <Image loading="lazy" src={view} alt="" className="aspect-[1.28] fill-white w-[18px]" />
                     </button>
                   </td>
                 </tr>

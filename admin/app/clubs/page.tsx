@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import Sidebar from "../shared/Sidebar";
-import Header from "./components/Header";
+import Header from "../shared/Header";
 import ClubTable from "./components/ClubsTable";
 import Modal from "./components/Modal"; // Ensure to import the Modal component
 // import ClubView from "./components/ClubView";

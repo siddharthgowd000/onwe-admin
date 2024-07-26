@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import Sidebar from "../shared/Sidebar";
-import Header from "./components/Header";
+import Header from "../shared/Header";
 import EventTable from "./components/EventTable";
 import EventDetails from "./components/EventDetails";
 import CreateEvent from "./components/CreateEvent";
