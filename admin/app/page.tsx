@@ -1,17 +1,26 @@
-import Image from "next/image";
-import UserDashboard from "./users/page";
-import ClubsDashboard from "./clubs/page";
-import EventsDashboard from "./events/page";
-import MagazineDashboard from "./magazines/page";
-
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <main>
-     {/* <UserDashboard /> */}
-     {/* <ClubsDashboard/> */}
-     {/* <EventsDashboard /> */}
-     <MagazineDashboard />
+    <main className="p-4">
+      <h1>Welcome to OnwE</h1>
+      <ul>
+        <li>
+          <Link href="/users">Users Dashboard</Link>
+        </li>
+        <li>
+          <Link href="/posts">Posts Dashboard</Link>
+        </li>
+        <li>
+          <Link href="/clubs">Clubs Dashboard</Link>
+        </li>
+        <li>
+          <Link href="/events">Events Dashboard</Link>
+        </li>
+        <li>
+          <Link href="/magazines">Magazines Dashboard</Link>
+        </li>
+      </ul>
     </main>
   );
 }

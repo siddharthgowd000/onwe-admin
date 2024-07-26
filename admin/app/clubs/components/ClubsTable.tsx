@@ -102,7 +102,7 @@ const ClubTable: React.FC<ClubTableProps> = ({ searchQuery }) => {
   ];
 
   return (
-    <div className="flex flex-col h-[82vh] mt-8 mx-6">
+    <div className="flex flex-col h-[82vh] mt-6 mx-4">
       <div className="flex-1 overflow-auto">
         <table className="w-full text-base font-medium text-center border-separate border-spacing-0">
           <thead className="sticky top-0 bg-slate-50 text-black border-b border-solid border-stone-300">

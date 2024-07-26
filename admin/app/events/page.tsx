@@ -47,9 +47,7 @@ const EventsDashboard: React.FC = () => {
   };
 
   return (
-    <div className="bg-slate-50 h-screen flex">
-      <Sidebar />
-      <main className="flex flex-col w-full ml-[16%] pt-[4rem]">
+      <main className="flex flex-col w-full  pt-[4rem]">
         <Header onSearch={handleSearch} onCreate={handleCreate} />
         <div className="flex">
           <EventTable searchQuery={searchQuery} onSelectEvent={handleSelectEvent} />
@@ -64,7 +62,6 @@ const EventsDashboard: React.FC = () => {
           </div>
         )}
       </main>
-    </div>
   );
 };
 

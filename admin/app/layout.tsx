@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import Sidebar from "./shared/Sidebar"; // Update the import path accordingly
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,8 +18,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        
-        {children}</body>
+        <div className="flex">
+          <Sidebar />
+          <main className="flex-grow ml-[16%]">
+            {children}
+          </main>
+        </div>
+      </body>
     </html>
   );
 }

@@ -125,7 +125,7 @@ const magazineItems: MagazineItem[] = [
   {
     id: 17,
     image: "https://cdn.builder.io/api/v1/image/assets/TEMP/64578ae9ef82679855e8860ed12c161de04e59bb4e19b30082d2a8d361c712cd?apiKey=fa090b16b04649b4a5024c30e95337f0&&apiKey=fa090b16b04649b4a5024c30e95337f0",
-    title: "FOOD SCENE",
+    title: "AKSHITHA",
     date: "MAGAZINE 08. SEP 25",
     description: "Praesent quis justo vel nunc aliquam tincidunt. Sed euismod, nunc id aliquam tincidunt, nunc nunc tincidunt nunc, nec tincidunt nunc nunc id nunc."
   },
@@ -145,7 +145,7 @@ const MagazineSection: React.FC<{ searchQuery: string }> = ({ searchQuery }) => 
     };
   
     return (
-      <div className="flex gap-5 max-md:flex-col mt-14 h-[80vh]">
+      <div className="flex gap-5 max-md:flex-col mt-14 h-[80vh] w-full">
         <div className="flex flex-col w-[57%] max-md:ml-0 max-md:w-full">
           <MagazineGrid items={filteredMagazines} onSelect={handleMagazineSelect} />
         </div>

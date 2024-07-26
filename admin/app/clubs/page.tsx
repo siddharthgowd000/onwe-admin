@@ -23,9 +23,7 @@ const ClubsDashboard: React.FC = () => {
   };
 
   return (
-    <div className="bg-slate-50 h-screen flex">
-      <Sidebar/>
-      <main className="flex flex-col w-full ml-[16%] pt-[4rem]">
+      <main className="flex flex-col w-full pt-[4rem]">
         <Header onSearch={handleSearch} onCreate={handleCreate} />
         <div className="flex-grow">
           <div className="text-2xl font-bold text-gray-800">All Clubs</div>
@@ -33,7 +31,6 @@ const ClubsDashboard: React.FC = () => {
         </div>
         {isModalOpen && <Modal onClose={handleCloseModal} />}
       </main>
-    </div>
   );
 };
 

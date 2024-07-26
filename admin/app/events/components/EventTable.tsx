@@ -45,7 +45,7 @@ const EventTable: React.FC<EventTableProps> = ({ searchQuery, onSelectEvent }) =
   }, [searchQuery]);
 
   return (
-    <section className="flex flex-col w-[60%] max-md:ml-0 max-md:w-full mt-14 px-5">
+    <section className="flex flex-col w-[60%] max-md:ml-0 max-md:w-full mt-14 px-2 ml-[-8px]">
       <div className="max-md:mt-9 max-md:max-w-full ">
         <table className="w-full table-fixed border-collapse">
           <thead className="bg-gray-100 sticky top-0">

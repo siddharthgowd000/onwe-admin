@@ -142,7 +142,7 @@ const UserTable: React.FC<{ searchQuery: string }> = ({ searchQuery }) => {
   ];
 
   return (
-    <div className="flex flex-col h-[82vh] mt-14 mx-6 overflow-hidden">
+    <div className="flex flex-col h-[80vh] mt-14 mx-6 overflow-hidden w-full">
       <div className="flex-1 overflow-auto">
         <table className="w-full text-base font-medium text-center border-separate border-spacing-0">
           <thead className="sticky top-0 bg-slate-50 text-black border-b border-solid border-stone-300">
@@ -159,7 +159,7 @@ const UserTable: React.FC<{ searchQuery: string }> = ({ searchQuery }) => {
           <tbody className="text-zinc-500">
             {filteredUsers.length > 0 ? (
               filteredUsers.map((user, index) => (
-                <tr key={index} className={index % 2 === 0 ? "bg-slate-50" : ""}>
+                <tr key={index} className={index % 2 === 0 ? "" : "bg-slate-50"}>
                   <td className="px-2.5 py-2 text-left">{user.name}</td>
                   <td className="px-2.5 py-2">{user.email}</td>
                   <td className="px-2.5 py-2">{user.username}</td>
